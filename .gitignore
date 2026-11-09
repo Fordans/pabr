@@ -1,0 +1,107 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── 虚拟环境 ────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── 测试 / 类型检查 / 覆盖率 ───────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ── Jupyter ────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── 数据 / trace（大文件不进 git，小样本走 data/samples/ 并显式 track）──
+*.pcap
+*.pcapng
+*.cap
+data/raw/
+data/processed/
+data/traces/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+runs/
+wandb/
+mlruns/
+*.log
+
+# 注意：data/samples/ 下的少量小样本 trace 需要保留，
+# 用 `git add -f data/samples/xxx.parquet` 显式添加。
+
+# ── 环境与密钥 ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# ── IDE / 编辑器 ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.codeartsdoer/
+
+# ── 操作系统 ───────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Docker 运行时产物 ──────────────────────────────────
+docker-compose.override.yml
+
+# ── 打包发布产物 ───────────────────────────────────────
+*.tar.gz
+*.zip
